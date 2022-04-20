@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_trapdoor",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "overthevoid:eerie_planks"
+    }
+  },
+  "result": {
+    "item": "overthevoid:eerie_trapdoor",
+    "count": 2
+  }
+}

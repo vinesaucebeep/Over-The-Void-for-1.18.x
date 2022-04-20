@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "overthevoid:block/tall_eerie_roots_top"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "overthevoid:block/stripped_eerie_hyphae",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "overthevoid:block/stripped_eerie_hyphae"
+    },
+    "axis=z": {
+      "model": "overthevoid:block/stripped_eerie_hyphae",
+      "x": 90
+    }
+  }
+}

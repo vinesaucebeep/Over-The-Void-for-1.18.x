@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "overthevoid:block/eerie_planks",
+    "top": "overthevoid:block/eerie_planks",
+    "side": "overthevoid:block/eerie_planks"
+  }
+}

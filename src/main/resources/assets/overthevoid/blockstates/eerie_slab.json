@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "overthevoid:block/eerie_slab"
+    },
+    "type=double": {
+      "model": "overthevoid:block/eerie_planks"
+    },
+    "type=top": {
+      "model": "overthevoid:block/eerie_slab_top"
+    }
+  }
+}

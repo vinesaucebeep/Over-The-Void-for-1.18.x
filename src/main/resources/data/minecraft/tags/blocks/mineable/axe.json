@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "#overthevoid:chorus_stems",
+    "#overthevoid:eerie_stems",
+    "overthevoid:eerie_door",
+    "overthevoid:eerie_trapdoor",
+    "overthevoid:eerie_planks",
+    "overthevoid:chorus_planks",
+    "overthevoid:chorus_door",
+    "overthevoid:chorus_trapdoor"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "overthevoid:block/chorus_wart_block"
+  }
+}

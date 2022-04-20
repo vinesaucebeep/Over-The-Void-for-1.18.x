@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "overthevoid:block/eerie_stem",
+    "side": "overthevoid:block/eerie_stem"
+  }
+}

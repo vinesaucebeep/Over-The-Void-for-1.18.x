@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/tinted_cross",
+  "textures": {
+    "cross": "overthevoid:block/tall_eerie_roots_top"
+  }
+}

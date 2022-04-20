@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "overthevoid:block/chorus_slab"
+    },
+    "type=double": {
+      "model": "overthevoid:block/chorus_planks"
+    },
+    "type=top": {
+      "model": "overthevoid:block/chorus_slab_top"
+    }
+  }
+}

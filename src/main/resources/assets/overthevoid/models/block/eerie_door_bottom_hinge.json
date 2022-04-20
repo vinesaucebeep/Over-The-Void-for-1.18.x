@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_rh",
+  "textures": {
+    "top": "overthevoid:block/eerie_door_top",
+    "bottom": "overthevoid:block/eerie_door_bottom"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "overthevoid:block/tall_chorus_roots_bottom"
+    },
+    "half=upper": {
+      "model": "overthevoid:block/tall_chorus_roots_top"
+    }
+  }
+}

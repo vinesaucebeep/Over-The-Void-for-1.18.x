@@ -6,6 +6,7 @@ import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.lwjgl.system.CallbackI;
 import overthevoid.overthevoid.Overthevoid;
 
 public class ItemInit {
@@ -27,6 +28,9 @@ public class ItemInit {
     public static final RegistryObject<Item> CHORUS_SLAB = ITEMS.register("chorus_slab", () -> new BlockItem(BlockInit.CHORUS_SLAB.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
     public static final RegistryObject<Item> CHORUS_HYPHAE = ITEMS.register("chorus_hyphae", () -> new BlockItem(BlockInit.CHORUS_HYPHAE.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
     public static final RegistryObject<Item> STRIPPED_CHORUS_HYPHAE = ITEMS.register("stripped_chorus_hyphae", () -> new BlockItem(BlockInit.STRIPPED_CHORUS_HYPHAE.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
+    public static final RegistryObject<Item> CHORUS_ROOTS = ITEMS.register("chorus_roots", () -> new BlockItem(BlockInit.CHORUS_ROOTS.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
+    public static final RegistryObject<Item> TALL_CHORUS_ROOTS = ITEMS.register("tall_chorus_roots", () -> new BlockItem(BlockInit.TALL_CHORUS_ROOTS.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
+
 
 
 

@@ -31,6 +31,10 @@ public class BlockInit {
     public static final RegistryObject<Block> CHORUS_SLAB = BLOCKS.register("chorus_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_SLAB).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CHORUS_HYPHAE = BLOCKS.register("chorus_hyphae", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_HYPHAE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> STRIPPED_CHORUS_HYPHAE = BLOCKS.register("stripped_chorus_hyphae", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_CRIMSON_HYPHAE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CHORUS_ROOTS = BLOCKS.register("chorus_roots", () -> new RootsBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_ROOTS).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> TALL_CHORUS_ROOTS = BLOCKS.register("tall_chorus_roots", () -> new TallRootsBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_ROOTS).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> POTTED_CHORUS_ROOTS = BLOCKS.register("potted_chorus_roots", () -> new FlowerPotBlock(null, CHORUS_ROOTS, BlockBehaviour.Properties.copy(Blocks.POTTED_CRIMSON_ROOTS)));
+
 
     // EERIE
     public static final RegistryObject<Block> EERIE_PLANKS = BLOCKS.register("eerie_planks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS).requiresCorrectToolForDrops()));

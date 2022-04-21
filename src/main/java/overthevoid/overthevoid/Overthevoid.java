@@ -44,6 +44,7 @@ public class Overthevoid {
     private void setup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(BlockInit.EERIE_ROOTS.getId(), BlockInit.POTTED_EERIE_ROOTS);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(BlockInit.CHORUS_ROOTS.getId(), BlockInit.POTTED_CHORUS_ROOTS);
         });
     }
 }

@@ -50,7 +50,6 @@ public class BlockInit {
     public static final RegistryObject<Block> EERIE_VINES = BLOCKS.register("eerie_vines", () -> new EerieVinesBlock(BlockBehaviour.Properties.copy(Blocks.WEEPING_VINES).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> EERIE_VINES_PLANT = BLOCKS.register("eerie_vines_plant", () -> new EerieVinesPlantBlock(BlockBehaviour.Properties.copy(Blocks.WEEPING_VINES_PLANT).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> TALL_EERIE_ROOTS = BLOCKS.register("tall_eerie_roots", () -> new TallRootsBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_ROOTS).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> POTTED_EERIE_ROOTS = BLOCKS.register("potted_eerie_roots", () -> new FlowerPotBlock(null, BlockInit.EERIE_ROOTS, BlockBehaviour.Properties.copy(Blocks.POTTED_CRIMSON_ROOTS).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> POTTED_EERIE_ROOTS = BLOCKS.register("potted_eerie_roots", () -> new FlowerPotBlock(null, EERIE_ROOTS, BlockBehaviour.Properties.copy(Blocks.POTTED_CRIMSON_ROOTS).instabreak().noOcclusion()));
 
 }
-

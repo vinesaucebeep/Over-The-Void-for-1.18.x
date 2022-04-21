@@ -30,6 +30,7 @@ public class ItemInit {
     public static final RegistryObject<Item> STRIPPED_CHORUS_HYPHAE = ITEMS.register("stripped_chorus_hyphae", () -> new BlockItem(BlockInit.STRIPPED_CHORUS_HYPHAE.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
     public static final RegistryObject<Item> CHORUS_ROOTS = ITEMS.register("chorus_roots", () -> new BlockItem(BlockInit.CHORUS_ROOTS.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
     public static final RegistryObject<Item> TALL_CHORUS_ROOTS = ITEMS.register("tall_chorus_roots", () -> new BlockItem(BlockInit.TALL_CHORUS_ROOTS.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
+    public static final RegistryObject<Item> CHORUS_FUNGUS = ITEMS.register("chorus_fungus", () -> new BlockItem(BlockInit.CHORUS_FUNGUS.get(), new Item.Properties().tab(Overthevoid.OTV_TAB)));
 
 
 

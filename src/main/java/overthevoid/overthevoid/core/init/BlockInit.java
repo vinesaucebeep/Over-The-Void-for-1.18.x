@@ -1,5 +1,6 @@
 package overthevoid.overthevoid.core.init;
 
+import net.minecraft.data.worldgen.features.TreeFeatures;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -34,6 +35,9 @@ public class BlockInit {
     public static final RegistryObject<Block> CHORUS_ROOTS = BLOCKS.register("chorus_roots", () -> new RootsBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_ROOTS).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> TALL_CHORUS_ROOTS = BLOCKS.register("tall_chorus_roots", () -> new TallRootsBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_ROOTS).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> POTTED_CHORUS_ROOTS = BLOCKS.register("potted_chorus_roots", () -> new FlowerPotBlock(null, CHORUS_ROOTS, BlockBehaviour.Properties.copy(Blocks.POTTED_CRIMSON_ROOTS)));
+    public static final RegistryObject<Block> CHORUS_FUNGUS = BLOCKS.register("chorus_fungus", () -> new FungusBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_FUNGUS).instabreak().noOcclusion(), () -> {
+        return TreeFeatures.CRIMSON_FUNGUS;
+    }));
 
 
     // EERIE

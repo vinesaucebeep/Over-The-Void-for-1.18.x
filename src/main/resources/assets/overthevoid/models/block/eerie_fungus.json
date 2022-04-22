@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "overthevoid:block/eerie_fungus"
+  }
+}

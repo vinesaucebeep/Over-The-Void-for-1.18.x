@@ -59,5 +59,8 @@ public class BlockInit {
     public static final RegistryObject<Block> EERIE_VINES_PLANT = BLOCKS.register("eerie_vines_plant", () -> new EerieVinesPlantBlock(BlockBehaviour.Properties.copy(Blocks.WEEPING_VINES_PLANT).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> TALL_EERIE_ROOTS = BLOCKS.register("tall_eerie_roots", () -> new TallRootsBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_ROOTS).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> POTTED_EERIE_ROOTS = BLOCKS.register("potted_eerie_roots", () -> new FlowerPotBlock(null, EERIE_ROOTS, BlockBehaviour.Properties.copy(Blocks.POTTED_CRIMSON_ROOTS).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> EERIE_FUNGUS = BLOCKS.register("eerie_fungus", () -> new FungusBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_FUNGUS).instabreak().noOcclusion(), () -> {
+        return TreeFeatures.WARPED_FUNGUS;
+    }));
 
 }

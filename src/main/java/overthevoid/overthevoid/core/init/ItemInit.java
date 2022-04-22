@@ -54,6 +54,7 @@ public class ItemInit {
     public static final RegistryObject<Item> EERIE_ROOTS = ITEMS.register("eerie_roots", () -> new BlockItem(BlockInit.EERIE_ROOTS.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
     public static final RegistryObject<Item> EERIE_VINES = ITEMS.register("eerie_vines", () -> new BlockItem(BlockInit.EERIE_VINES.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
     public static final RegistryObject<Item> TALL_EERIE_ROOTS = ITEMS.register("tall_eerie_roots", () -> new BlockItem(BlockInit.TALL_EERIE_ROOTS.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
+    public static final RegistryObject<Item> EERIE_FUNGUS = ITEMS.register("eerie_fungus", () -> new BlockItem(BlockInit.EERIE_FUNGUS.get(), new Item.Properties().tab(Overthevoid.OTV_TAB)));
 
 
 

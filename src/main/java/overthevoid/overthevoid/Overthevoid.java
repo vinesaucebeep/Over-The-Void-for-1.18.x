@@ -45,6 +45,8 @@ public class Overthevoid {
         event.enqueueWork(() -> {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(BlockInit.EERIE_ROOTS.getId(), BlockInit.POTTED_EERIE_ROOTS);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(BlockInit.CHORUS_ROOTS.getId(), BlockInit.POTTED_CHORUS_ROOTS);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(BlockInit.CHORUS_FUNGUS.getId(), BlockInit.POTTED_CHORUS_FUNGUS);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(BlockInit.EERIE_FUNGUS.getId(), BlockInit.POTTED_EERIE_FUNGUS);
         });
     }
 }

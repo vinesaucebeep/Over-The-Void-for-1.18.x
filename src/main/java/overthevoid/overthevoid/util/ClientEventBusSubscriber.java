@@ -28,5 +28,8 @@ public class ClientEventBusSubscriber {
         ItemBlockRenderTypes.setRenderLayer(BlockInit.TALL_EERIE_ROOTS.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(BlockInit.POTTED_EERIE_ROOTS.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(BlockInit.EERIE_FUNGUS.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(BlockInit.POTTED_CHORUS_FUNGUS.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(BlockInit.POTTED_EERIE_FUNGUS.get(), RenderType.cutout());
+
     }
 }

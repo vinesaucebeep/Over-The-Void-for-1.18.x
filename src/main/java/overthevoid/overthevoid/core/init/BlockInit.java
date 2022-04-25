@@ -20,9 +20,9 @@ public class BlockInit {
     public static final RegistryObject<Block> STRIPPED_CHORUS_STEM = BLOCKS.register("stripped_chorus_stem", () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.STRIPPED_CRIMSON_STEM).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CHORUS_STEM = BLOCKS.register("chorus_stem", () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.STRIPPED_CRIMSON_STEM).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CHORUS_PLANKS = BLOCKS.register("chorus_planks", () -> new Block(Block.Properties.copy(Blocks.CRIMSON_PLANKS).requiresCorrectToolForDrops()));
-    public static final RegistryObject<DoorBlock> CHORUS_DOOR = BLOCKS.register("chorus_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_DOOR).requiresCorrectToolForDrops()));
-    public static final RegistryObject<NyliumBlock> CHORUS_NYLIUM = BLOCKS.register("chorus_nylium", () -> new NyliumBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.SAND).strength(3.0f, 9.0f).sound(SoundType.NYLIUM).requiresCorrectToolForDrops()));
-    public static final RegistryObject<TrapDoorBlock> CHORUS_TRAPDOOR = BLOCKS.register("chorus_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_TRAPDOOR).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CHORUS_DOOR = BLOCKS.register("chorus_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_DOOR).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CHORUS_NYLIUM = BLOCKS.register("chorus_nylium", () -> new NyliumBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.SAND).strength(3.0f, 9.0f).sound(SoundType.NYLIUM).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CHORUS_TRAPDOOR = BLOCKS.register("chorus_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_TRAPDOOR).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CHORUS_WART_BLOCK = BLOCKS.register("chorus_wart_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.WARPED_WART_BLOCK).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CHORUS_VINES = BLOCKS.register("chorus_vines", () -> new ChorusVinesBlock(BlockBehaviour.Properties.copy(Blocks.TWISTING_VINES).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CHORUS_VINES_PLANT = BLOCKS.register("chorus_vines_plant", () -> new ChorusVinesPlantBlock(BlockBehaviour.Properties.copy(Blocks.TWISTING_VINES_PLANT).requiresCorrectToolForDrops()));
@@ -38,7 +38,7 @@ public class BlockInit {
     public static final RegistryObject<Block> CHORUS_FUNGUS = BLOCKS.register("chorus_fungus", () -> new FungusBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_FUNGUS).instabreak().noOcclusion(), () -> {
         return TreeFeatures.CRIMSON_FUNGUS;
     }));
-
+    public static final RegistryObject<Block> POTTED_CHORUS_FUNGUS = BLOCKS.register("potted_chorus_fungus", () -> new FlowerPotBlock(null, CHORUS_FUNGUS, BlockBehaviour.Properties.copy(Blocks.POTTED_CRIMSON_FUNGUS)));
 
     // EERIE
     public static final RegistryObject<Block> EERIE_PLANKS = BLOCKS.register("eerie_planks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS).requiresCorrectToolForDrops()));
@@ -51,7 +51,7 @@ public class BlockInit {
     public static final RegistryObject<Block> EERIE_STAIRS = BLOCKS.register("eerie_stairs", () -> new StairBlock(() -> BlockInit.EERIE_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.CRIMSON_STAIRS).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> EERIE_SLAB = BLOCKS.register("eerie_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_SLAB).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> EERIE_WART_BLOCK = BLOCKS.register("eerie_wart_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.WARPED_WART_BLOCK).requiresCorrectToolForDrops()));
-    public static final RegistryObject<NyliumBlock> EERIE_NYLIUM = BLOCKS.register("eerie_nylium", () -> new NyliumBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.SAND).strength(3.0f, 9.0f).sound(SoundType.NYLIUM).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> EERIE_NYLIUM = BLOCKS.register("eerie_nylium", () -> new NyliumBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.SAND).strength(3.0f, 9.0f).sound(SoundType.NYLIUM).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> EERIE_HYPHAE = BLOCKS.register("eerie_hyphae", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_HYPHAE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> STRIPPED_EERIE_HYPHAE = BLOCKS.register("stripped_eerie_hyphae", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_CRIMSON_HYPHAE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> EERIE_ROOTS = BLOCKS.register("eerie_roots", () -> new RootsBlock(BlockBehaviour.Properties.of(Material.REPLACEABLE_FIREPROOF_PLANT, MaterialColor.NETHER).noCollission().instabreak().sound(SoundType.ROOTS).requiresCorrectToolForDrops()));
@@ -62,5 +62,7 @@ public class BlockInit {
     public static final RegistryObject<Block> EERIE_FUNGUS = BLOCKS.register("eerie_fungus", () -> new FungusBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_FUNGUS).instabreak().noOcclusion(), () -> {
         return TreeFeatures.WARPED_FUNGUS;
     }));
+    public static final RegistryObject<Block> POTTED_EERIE_FUNGUS = BLOCKS.register("potted_eerie_fungus", () ->  new FlowerPotBlock(null, EERIE_FUNGUS, BlockBehaviour.Properties.copy(Blocks.POTTED_CRIMSON_FUNGUS)));
 
+    // ECLIPSE
 }

@@ -1,0 +1,90 @@
+{
+  "multipart": [
+    {
+      "apply": [
+        {
+          "model": "overthevoid:block/ender_fire_floor0"
+        },
+        {
+          "model": "overthevoid:block/ender_fire_floor1"
+        }
+      ]
+    },
+    {
+      "apply": [
+        {
+          "model": "overthevoid:block/ender_fire_side0"
+        },
+        {
+          "model": "overthevoid:block/ender_fire_side1"
+        },
+        {
+          "model": "overthevoid:block/ender_fire_side_alt0"
+        },
+        {
+          "model": "overthevoid:block/ender_fire_side_alt1"
+        }
+      ]
+    },
+    {
+      "apply": [
+        {
+          "model": "overthevoid:block/ender_fire_side0",
+          "y": 90
+        },
+        {
+          "model": "overthevoid:block/ender_fire_side1",
+          "y": 90
+        },
+        {
+          "model": "overthevoid:block/ender_fire_side_alt0",
+          "y": 90
+        },
+        {
+          "model": "overthevoid:block/ender_fire_side_alt1",
+          "y": 90
+        }
+      ]
+    },
+    {
+      "apply": [
+        {
+          "model": "overthevoid:block/ender_fire_side0",
+          "y": 180
+        },
+        {
+          "model": "overthevoid:block/ender_fire_side1",
+          "y": 180
+        },
+        {
+          "model": "overthevoid:block/ender_fire_side_alt0",
+          "y": 180
+        },
+        {
+          "model": "overthevoid:block/ender_fire_side_alt1",
+          "y": 180
+        }
+      ]
+    },
+    {
+      "apply": [
+        {
+          "model": "overthevoid:block/ender_fire_side0",
+          "y": 270
+        },
+        {
+          "model": "overthevoid:block/ender_fire_side1",
+          "y": 270
+        },
+        {
+          "model": "overthevoid:block/ender_fire_side_alt0",
+          "y": 270
+        },
+        {
+          "model": "overthevoid:block/ender_fire_side_alt1",
+          "y": 270
+        }
+      ]
+    }
+  ]
+}

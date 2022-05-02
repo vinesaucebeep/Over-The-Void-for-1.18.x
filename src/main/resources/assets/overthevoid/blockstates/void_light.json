@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "overthevoid:block/void_light",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "overthevoid:block/void_light"
+    },
+    "axis=z": {
+      "model": "overthevoid:block/void_light",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "overthevoid:block/void_light_top",
+    "side": "overthevoid:block/void_light"
+  }
+}

@@ -13,6 +13,10 @@ public class ItemInit {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Overthevoid.MOD_ID);
 
+
+   // BlockItems are the Item of the block that appear in your inventory.
+
+
     // CHORUS
     public static final RegistryObject<Item> STRIPPED_CHORUS_STEM = ITEMS.register("stripped_chorus_stem", () -> new BlockItem(BlockInit.STRIPPED_CHORUS_STEM.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
     public static final RegistryObject<Item> CHORUS_STEM = ITEMS.register("chorus_stem", () -> new BlockItem(BlockInit.CHORUS_STEM.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
@@ -31,6 +35,8 @@ public class ItemInit {
     public static final RegistryObject<Item> CHORUS_ROOTS = ITEMS.register("chorus_roots", () -> new BlockItem(BlockInit.CHORUS_ROOTS.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
     public static final RegistryObject<Item> TALL_CHORUS_ROOTS = ITEMS.register("tall_chorus_roots", () -> new BlockItem(BlockInit.TALL_CHORUS_ROOTS.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
     public static final RegistryObject<Item> CHORUS_FUNGUS = ITEMS.register("chorus_fungus", () -> new BlockItem(BlockInit.CHORUS_FUNGUS.get(), new Item.Properties().tab(Overthevoid.OTV_TAB)));
+    public static final RegistryObject<Item> VOID_LIGHT = ITEMS.register("void_light", () -> new BlockItem(BlockInit.VOID_LIGHT.get(), new Item.Properties().tab(Overthevoid.OTV_TAB)));
+    public static final RegistryObject<Item> POPPED_VOID_LIGHT = ITEMS.register("popped_void_light", () -> new BlockItem(BlockInit.POPPED_VOID_LIGHT.get(), new Item.Properties().tab(Overthevoid.OTV_TAB)));
 
 
 
@@ -55,6 +61,14 @@ public class ItemInit {
     public static final RegistryObject<Item> EERIE_VINES = ITEMS.register("eerie_vines", () -> new BlockItem(BlockInit.EERIE_VINES.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
     public static final RegistryObject<Item> TALL_EERIE_ROOTS = ITEMS.register("tall_eerie_roots", () -> new BlockItem(BlockInit.TALL_EERIE_ROOTS.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
     public static final RegistryObject<Item> EERIE_FUNGUS = ITEMS.register("eerie_fungus", () -> new BlockItem(BlockInit.EERIE_FUNGUS.get(), new Item.Properties().tab(Overthevoid.OTV_TAB)));
+
+
+    // ECLIPSE
+    public static final RegistryObject<Item> STRIPPED_ECLIPSE_STEM = ITEMS.register("stripped_eclipse_log", () -> new BlockItem(BlockInit.STRIPPED_ECLIPSE_LOG.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
+    public static final RegistryObject<Item> ECLIPSE_LOG = ITEMS.register("eclipse_log", () -> new BlockItem(BlockInit.ECLIPSE_LOG.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
+    public static final RegistryObject<Item> ECLIPSE_PLANKS = ITEMS.register("eclipse_planks", () -> new BlockItem(BlockInit.ECLIPSE_PLANKS.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
+    public static final RegistryObject<Item> ECLIPSE_DOOR = ITEMS.register("eclipse_door", () -> new BlockItem(BlockInit.ECLIPSE_DOOR.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
+
 
 
 

@@ -39,6 +39,8 @@ public class BlockInit {
         return TreeFeatures.CRIMSON_FUNGUS;
     }));
     public static final RegistryObject<Block> POTTED_CHORUS_FUNGUS = BLOCKS.register("potted_chorus_fungus", () -> new FlowerPotBlock(null, CHORUS_FUNGUS, BlockBehaviour.Properties.copy(Blocks.POTTED_CRIMSON_FUNGUS)));
+    public static final RegistryObject<Block> VOID_LIGHT = BLOCKS.register("void_light", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.SHROOMLIGHT)));
+    public static final RegistryObject<Block> POPPED_VOID_LIGHT = BLOCKS.register("popped_void_light", () -> new Block(BlockBehaviour.Properties.copy(Blocks.SHROOMLIGHT)));
 
     // EERIE
     public static final RegistryObject<Block> EERIE_PLANKS = BLOCKS.register("eerie_planks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS).requiresCorrectToolForDrops()));
@@ -65,4 +67,10 @@ public class BlockInit {
     public static final RegistryObject<Block> POTTED_EERIE_FUNGUS = BLOCKS.register("potted_eerie_fungus", () ->  new FlowerPotBlock(null, EERIE_FUNGUS, BlockBehaviour.Properties.copy(Blocks.POTTED_CRIMSON_FUNGUS)));
 
     // ECLIPSE
+    public static final RegistryObject<Block> ECLIPSE_PLANKS = BLOCKS.register("eclipse_planks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ECLIPSE_LOG = BLOCKS.register("eclipse_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
+    public static final RegistryObject<Block> STRIPPED_ECLIPSE_LOG = BLOCKS.register("stripped_eclipse_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
+    public static final RegistryObject<Block> ECLIPSE_DOOR = BLOCKS.register("eclipse_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).requiresCorrectToolForDrops()));
+
+
 }

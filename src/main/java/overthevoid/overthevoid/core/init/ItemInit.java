@@ -9,6 +9,11 @@ import net.minecraftforge.registries.RegistryObject;
 import org.lwjgl.system.CallbackI;
 import overthevoid.overthevoid.Overthevoid;
 
+/**
+ * Author: beep67
+ */
+
+
 public class ItemInit {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Overthevoid.MOD_ID);
@@ -68,6 +73,11 @@ public class ItemInit {
     public static final RegistryObject<Item> ECLIPSE_LOG = ITEMS.register("eclipse_log", () -> new BlockItem(BlockInit.ECLIPSE_LOG.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
     public static final RegistryObject<Item> ECLIPSE_PLANKS = ITEMS.register("eclipse_planks", () -> new BlockItem(BlockInit.ECLIPSE_PLANKS.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
     public static final RegistryObject<Item> ECLIPSE_DOOR = ITEMS.register("eclipse_door", () -> new BlockItem(BlockInit.ECLIPSE_DOOR.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
+    public static final RegistryObject<Item> ECLIPSE_TRAPDOOR = ITEMS.register("eclipse_trapdoor", () -> new BlockItem(BlockInit.ECLIPSE_TRAPDOOR.get(), new Item.Properties().tab(Overthevoid.OTV_TAB)));
+
+    // MISCELLANEOUS
+    public static final RegistryObject<Item> ENDER_CAMPFIRE = ITEMS.register("ender_campfire", () -> new BlockItem(BlockInit.ENDER_CAMPFIRE.get(), new Item.Properties().tab(Overthevoid.OTV_TAB)));
+    public static final RegistryObject<Item> ENDER_TORCH = ITEMS.register("ender_torch", () -> new BlockItem(BlockInit.ENDER_TORCH.get(), new Item.Properties().tab(Overthevoid.OTV_TAB)));
 
 
 

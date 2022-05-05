@@ -24,7 +24,6 @@ public class Overthevoid {
 
     public static final CreativeModeTab OTV_TAB = new CreativeModeTab(MOD_ID) {
         @Override
-        @OnlyIn(Dist.CLIENT)
         public ItemStack makeIcon() {
             return new ItemStack(ItemInit.EERIE_PLANKS.get());
         }

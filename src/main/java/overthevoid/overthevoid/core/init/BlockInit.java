@@ -1,5 +1,7 @@
 package overthevoid.overthevoid.core.init;
 
+import net.minecraft.core.particles.ParticleType;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.data.worldgen.features.TreeFeatures;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -11,6 +13,9 @@ import net.minecraftforge.registries.RegistryObject;
 import overthevoid.overthevoid.Overthevoid;
 import overthevoid.overthevoid.common.properties.blocks.*;
 
+/**
+ * Author: beep67
+ */
 
 public class BlockInit {
 
@@ -71,6 +76,12 @@ public class BlockInit {
     public static final RegistryObject<Block> ECLIPSE_LOG = BLOCKS.register("eclipse_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_ECLIPSE_LOG = BLOCKS.register("stripped_eclipse_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> ECLIPSE_DOOR = BLOCKS.register("eclipse_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ECLIPSE_TRAPDOOR = BLOCKS.register("eclipse_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_TRAPDOOR).requiresCorrectToolForDrops()));
+
+    // MISCELLANEOUS
+
+    public static final RegistryObject<Block> ENDER_CAMPFIRE = BLOCKS.register("ender_campfire", () -> new CampfireBlock(false, 2, BlockBehaviour.Properties.copy(Blocks.SOUL_CAMPFIRE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ENDER_TORCH = BLOCKS.register("ender_torch", () -> new TorchBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_TORCH).requiresCorrectToolForDrops(), ParticleTypes.FLAME));
 
 
 }

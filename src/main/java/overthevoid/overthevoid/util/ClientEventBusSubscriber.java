@@ -9,6 +9,11 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import overthevoid.overthevoid.Overthevoid;
 import overthevoid.overthevoid.core.init.BlockInit;
 
+/**
+ * Author: beep67
+ */
+
+
 @Mod.EventBusSubscriber(modid = Overthevoid.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ClientEventBusSubscriber {
 
@@ -30,6 +35,8 @@ public class ClientEventBusSubscriber {
         ItemBlockRenderTypes.setRenderLayer(BlockInit.EERIE_FUNGUS.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(BlockInit.POTTED_CHORUS_FUNGUS.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(BlockInit.POTTED_EERIE_FUNGUS.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(BlockInit.ENDER_CAMPFIRE.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(BlockInit.ENDER_TORCH.get(), RenderType.cutout());
 
     }
 }

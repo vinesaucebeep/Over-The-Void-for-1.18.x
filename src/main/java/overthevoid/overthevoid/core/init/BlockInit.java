@@ -81,7 +81,7 @@ public class BlockInit {
     // MISCELLANEOUS
 
     public static final RegistryObject<Block> ENDER_CAMPFIRE = BLOCKS.register("ender_campfire", () -> new CampfireBlock(false, 2, BlockBehaviour.Properties.copy(Blocks.SOUL_CAMPFIRE).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> ENDER_TORCH = BLOCKS.register("ender_torch", () -> new TorchBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_TORCH).requiresCorrectToolForDrops(), ParticleTypes.FLAME));
+    public static final RegistryObject<Block> ENDER_TORCH = BLOCKS.register("ender_torch", () -> new TorchBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_TORCH).requiresCorrectToolForDrops(), ParticleTypes.END_ROD));
 
 
 }

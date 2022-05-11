@@ -1,5 +1,6 @@
 package overthevoid.overthevoid.core.init;
 
+import cpw.mods.util.LambdaExceptionUtils;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -69,11 +70,17 @@ public class ItemInit {
 
 
     // ECLIPSE
-    public static final RegistryObject<Item> STRIPPED_ECLIPSE_STEM = ITEMS.register("stripped_eclipse_log", () -> new BlockItem(BlockInit.STRIPPED_ECLIPSE_LOG.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
+    public static final RegistryObject<Item> STRIPPED_ECLIPSE_LOG = ITEMS.register("stripped_eclipse_log", () -> new BlockItem(BlockInit.STRIPPED_ECLIPSE_LOG.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
     public static final RegistryObject<Item> ECLIPSE_LOG = ITEMS.register("eclipse_log", () -> new BlockItem(BlockInit.ECLIPSE_LOG.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
+    public static final RegistryObject<Item> STRIPPED_ECLIPSE_WOOD = ITEMS.register("stripped_eclipse_wood", () -> new BlockItem(BlockInit.STRIPPED_ECLIPSE_WOOD.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
+    public static final RegistryObject<Item> ECLIPSE_WOOD = ITEMS.register("eclipse_wood", () -> new BlockItem(BlockInit.ECLIPSE_WOOD.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
     public static final RegistryObject<Item> ECLIPSE_PLANKS = ITEMS.register("eclipse_planks", () -> new BlockItem(BlockInit.ECLIPSE_PLANKS.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
     public static final RegistryObject<Item> ECLIPSE_DOOR = ITEMS.register("eclipse_door", () -> new BlockItem(BlockInit.ECLIPSE_DOOR.get(),new Item.Properties().tab(Overthevoid.OTV_TAB)));
     public static final RegistryObject<Item> ECLIPSE_TRAPDOOR = ITEMS.register("eclipse_trapdoor", () -> new BlockItem(BlockInit.ECLIPSE_TRAPDOOR.get(), new Item.Properties().tab(Overthevoid.OTV_TAB)));
+    public static final RegistryObject<Item> ECLIPSE_GRASS = ITEMS.register("eclipse_grass", () -> new BlockItem(BlockInit.ECLIPSE_GRASS.get(), new Item.Properties().tab(Overthevoid.OTV_TAB)));
+
+    // FOOD
+    public static final RegistryObject<Item> EERIE_FRUIT = ITEMS.register("eerie_fruit", () -> new Item(new Item.Properties().tab(Overthevoid.OTV_TAB)));
 
     // MISCELLANEOUS
     public static final RegistryObject<Item> ENDER_CAMPFIRE = ITEMS.register("ender_campfire", () -> new BlockItem(BlockInit.ENDER_CAMPFIRE.get(), new Item.Properties().tab(Overthevoid.OTV_TAB)));
